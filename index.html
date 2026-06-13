@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Julie's Ins and Outs | Premium Florist in Birmingham. Over 15 years creating exquisite funeral tributes, luxury bouquets and bespoke floral designs.">
+    <meta name="author" content="Julie's Ins and Outs">
+    <meta name="keywords" content="premium florist Birmingham, luxury flowers, funeral tributes, bespoke floral design, high-end bouquets, wedding flowers, sympathy flowers, West Midlands florist">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Julie's Ins and Outs | Luxury Floral Design">
+    <meta property="og:description" content="Exquisite flowers for all occasions. Handcrafted with passion and precision.">
+    <meta property="og:image" content="Julieslogo.png">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#5A3E2B">
+    <title>Julie's Ins and Outs | Luxury Florist</title>
+
+    <!-- Core Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Premium Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5A3E2B',       // Deep rich walnut — premium brand colour
+                        secondary: '#F8F2EB',     // Warm ivory — soft background
+                        accent: '#B47A4B',        // Warm gold/bronze — luxury highlights
+                        muted: '#8A725C',         // Soft taupe — body text
+                        cream: '#FFFCF8',         // Pure cream — main background
+                        dark: '#2E241C',          // Deep espresso — headings
+                        sage: '#9BA887',          // Soft sage green — floral accent
+                        blush: '#E8D0C0',         // Dusty rose — subtle details
+                        border: '#E2D4C5',        // Warm border tone
+                        light: '#FAF6F0'          // Very light background
+                    },
+                    fontFamily: {
+                        display: ['Cormorant Garamond', 'serif'], // Elegant, luxury serif
+                        body: ['Montserrat', 'sans-serif'],       // Clean, modern sans
+                    },
+                    spacing: {
+                        '13': '3.25rem',
+                        '15': '3.75rem',
+                        '18': '4.5rem',
+                        '22': '5.5rem',
+                        '26': '6.5rem',
+                        '30': '7.5rem',
+                    },
+                    borderRadius: {
+                        'xl': '0.75rem',
+                        '2xl': '1.25rem',
+                        '3xl': '1.75rem',
+                        '4xl': '2.5rem',
+                        'full': '9999px',
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px rgba(90, 62, 43, 0.06)',
+                        'medium': '0 15px 40px rgba(90, 62, 43, 0.09)',
+                        'strong': '0 20px 50px rgba(90, 62, 43, 0.12)',
+                        'luxury': '0 25px 60px rgba(90, 62, 43, 0.08), 0 0 20px rgba(180, 122, 75, 0.04)',
+                        'inner-luxury': 'inset 0 2px 10px rgba(90, 62, 43, 0.03)',
+                        'glow': '0 0 25px rgba(180, 122, 75, 0.12)'
+                    },
+                    animation: {
+                        'float-luxury': 'floatLuxury 8s ease-in-out infinite',
+                        'scroll-gentle': 'scrollGentle 50s linear infinite',
+                        'fade-elegant': 'fadeElegant 1.5s ease-out forwards',
+                        'rise-premium': 'risePremium 1.2s ease-out forwards',
+                        'pulse-subtle': 'pulseSubtle 4s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        floatLuxury: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0.5deg)' },
+                            '50%': { transform: 'translateY(-10px) rotate(-0.5deg)' }
+                        },
+                        scrollGentle: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' }
+                        },
+                        fadeElegant: {
+                            '0%': { opacity: '0', filter: 'blur(4px)' },
+                            '100%': { opacity: '1', filter: 'blur(0)' }
+                        },
+                        risePremium: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        pulseSubtle: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.85' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Premium Utilities & Global Styles -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow-premium {
+                text-shadow: 0 2px 4px rgba(46, 36, 28, 0.08);
+            }
+            .text-shadow-luxury {
+                text-shadow: 0 4px 8px rgba(46, 36, 28, 0.12);
+            }
+            .border-luxury {
+                border: 1px solid rgba(226, 212, 197, 0.6);
+            }
+            .bg-soft-gradient {
+                background: linear-gradient(135deg, #FFFCF8 0%, #F8F2EB 100%);
+            }
+            .hover-lift-premium {
+                transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .hover-lift-premium:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 20px 50px rgba(90, 62, 43, 0.15);
+            }
+            .image-premium {
+                width: 320px !important;
+                height: 400px !important;
+                object-fit: cover !important;
+                object-position: center !important;
+                border-radius: 1rem !important;
+                border: 6px solid #FFFFFF !important;
+                box-shadow: 0 8px 20px rgba(90, 62, 43, 0.08) !important;
+                transition: all 0.4s ease !important;
+            }
+            .image-premium:hover {
+                transform: scale(1.02) translateY(-4px) !important;
+                box-shadow: 0 15px 35px rgba(90, 62, 43, 0.12) !important;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .divider-floral {
+                height: 1px;
+                background: linear-gradient(to right, transparent, #B47A4B, transparent);
+                position: relative;
+            }
+            .divider-floral::after {
+                content: '✿';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #FFFCF8;
+                padding: 0 1.5rem;
+                color: #B47A4B;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Base Resets & Premium Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+            color: #8A725C;
+            background-color: #FFFCF8;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            color: #2E241C;
+            line-height: 1.3;
+        }
+        p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        /* Gallery Scroll Container */
+        .gallery-scroll {
+            overflow: hidden;
+            width: 100%;
+            padding: 1.5rem 0;
+            margin: 0 -1rem;
+        }
+        .gallery-track {
+            display: flex;
+            gap: 2rem;
+            padding: 0 1rem;
+            will-change: transform;
+        }
+    </style>
+</head>
+<body class="bg-cream text-muted overflow-x-hidden">
+
+    <!-- Premium Navigation -->
+    <nav class="fixed w-full bg-cream/95 backdrop-blur-xl z-50 py-6 px-6 md:px-16 shadow-soft transition-all duration-500" id="mainNav">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-4 group">
+                <img src="Julieslogo.png" alt="Julie's Ins and Outs Logo" class="h-14 md:h-16 w-auto transition-transform duration-300 group-hover:scale-105">
+                <div class="hidden sm:block">
+                    <span class="font-display font-semibold text-[clamp(1.2rem,2.5vw,1.6rem)] text-primary leading-tight">Julie's Ins and Outs</span>
+                    <p class="text-accent/80 text-sm font-light tracking-wider">Flowers for all occasions</p>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex gap-10 lg:gap-12">
+                <a href="#about" class="font-medium text-dark/70 hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all after:duration-300 hover:after:w-full">About</a>
+                <a href="#services" class="font-medium text-dark/70 hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all after:duration-300 hover:after:w-full">Services</a>
+                <a href="#gallery" class="font-medium text-dark/70 hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all after:duration-300 hover:after:w-full">Gallery</a>
+                <a href="#reviews" class="font-medium text-dark/70 hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all after:duration-300 hover:after:w-full">Reviews</a>
+                <a href="#contact" class="font-medium text-dark/70 hover:text-accent transition-colors duration-300 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-dark text-2xl hover:text-accent transition-colors" aria-label="Open menu">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Luxury Grade -->
+    <section class="min-h-screen flex items-center relative overflow-hidden pt-32 pb-24 bg-soft-gradient">
+        <!-- Subtle Floral Texture Only - No Random Icons -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/floral-pattern.png')] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-16 grid md:grid-cols-2 gap-20 items-center relative z-10">
+            <!-- Hero Text -->
+            <div class="animate-rise-premium" style="animation-delay: 0.2s;">
+                <p class="text-accent font-medium text-lg tracking-[0.3em] uppercase mb-4">Exquisite Floral Design</p>
+                <h1 class="font-display font-bold text-[clamp(3rem,7vw,5.2rem)] leading-[1.05] text-dark text-shadow-premium mb-6 text-balance">
+                    Julie's Ins and Outs
+                </h1>
+                <p class="text-[clamp(1.25rem,2.5vw,1.6rem)] text-primary/80 font-light mb-8 tracking-wide">Flowers for all occasions</p>
+                <p class="text-lg md:text-xl text-muted/90 mb-12 max-w-xl leading-relaxed text-balance">
+                    Fully established premium florist with over <span class="font-semibold text-dark">15 years of expertise</span>. Renowned for dignified funeral tributes, luxury hand-tied bouquets, and <span class="font-semibold text-dark">completely bespoke creations</span> crafted to perfection.
+                </p>
+                <div class="flex flex-wrap gap-6">
+                    <a href="#contact" class="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-medium shadow-luxury hover:shadow-strong hover-lift-premium transform transition-all duration-500 tracking-wide">
+                        Enquire Now
+                    </a>
+                    <a href="#gallery" class="bg-white/80 hover:bg-white text-primary px-10 py-4 rounded-full font-medium border-luxury shadow-soft hover:shadow-medium hover-lift-premium transform transition-all duration-500 tracking-wide">
+                        View Portfolio
+                    </a>
+                </div>
+
+                <!-- Trust Badge -->
+                <div class="flex items-center gap-4 mt-16 pt-6 border-t border-border/40 max-w-md">
+                    <div class="flex text-accent text-lg">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span class="text-muted/80 font-medium">100% 5-Star Reviews • Trusted Since 2010</span>
+                </div>
+            </div>
+
+            <!-- Hero Image - Premium Framed -->
+            <div class="relative animate-fade-elegant" style="animation-delay: 0.6s;">
+                <div class="rounded-[2rem] overflow-hidden shadow-luxury border-[8px] border-white hover-lift-premium">
+                    <img src="image1.jpeg" alt="Luxury floral arrangement by Julie's Ins and Outs" class="w-full h-auto object-cover">
+                </div>
+                <div class="absolute -bottom-8 -left-8 bg-white/90 backdrop-blur-md p-5 pr-8 rounded-2xl shadow-glow border-luxury">
+                    <p class="font-display font-semibold text-primary text-lg">Bespoke Excellence</p>
+                    <p class="text-muted text-sm">No design too complex</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elegant Divider -->
+    <div class="divider-floral max-w-4xl mx-auto"></div>
+
+    <!-- About Section -->
+    <section id="about" class="py-28 px-6 md:px-16 bg-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-secondary/30 -z-10 rounded-bl-[120px]"></div>
+        
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="font-display font-bold text-[clamp(2.2rem,4.5vw,3.5rem)] text-dark mb-5 text-shadow-premium">About Julie</h2>
+                <p class="text-muted/70 max-w-2xl mx-auto text-lg tracking-wide">A legacy of artistry, passion and uncompromising quality</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="relative group">
+                    <div class="rounded-[2rem] overflow-hidden shadow-medium hover-lift-premium border-[6px] border-white">
+                        <img src="image2.jpeg" alt="Julie - Master Florist" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="absolute -top-6 -right-6 w-20 h-20 bg-secondary/60 rounded-full flex items-center justify-center text-primary text-2xl shadow-soft">
+                        <i class="fa fa-leaf"></i>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <h3 class="font-display font-semibold text-2xl md:text-3xl text-dark">15+ Years of Floral Mastery</h3>
+                    <p class="text-muted/90 leading-relaxed text-lg">
+                        Julie is a fully established, highly respected florist with over 15 years of experience creating exquisite arrangements for the most important moments in life. Her reputation is built on uncompromising quality, personal service, and an extraordinary ability to translate your vision into floral art.
+                    </p>
+                    <p class="text-muted/90 leading-relaxed text-lg">
+                        Specialising in dignified, deeply personal funeral tributes, elegant luxury bouquets, and <span class="font-semibold text-dark">completely bespoke designs</span>. Julie is renowned for creating pieces other florists decline — if you can imagine it, she will craft it with precision and beauty.
+                    </p>
+                    <p class="text-muted/90 leading-relaxed text-lg">
+                        Every stem is hand-selected from premium growers; every arrangement is finished with meticulous attention to detail. Hundreds of clients return year after year, leaving glowing 5-star reviews for service that goes above and beyond.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-secondary/70 rounded-full flex items-center justify-center text-accent">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span class="text-dark/80 font-medium">Premium Blooms</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-secondary/70 rounded-full flex items-center justify-center text-accent">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span class="text-dark/80 font-medium">Bespoke Design</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-secondary/70 rounded-full flex items-center justify-center text-accent">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span class="text-dark/80 font-medium">Personal Service</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-secondary/70 rounded-full flex items-center justify-center text-accent">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span class="text-dark/80 font-medium">Trusted Expertise</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-28 px-6 md:px-16 bg-soft-gradient relative overflow-hidden">
+        <div class="absolute top-20 left-0 opacity-[0.04] bg-[url('https://www.transparenttextures.com/patterns/floral-pattern.png')] w-full h-full -z-10"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-24">
+                <h2 class="font-display font-bold text-[clamp(2.2rem,4.5vw,3.5rem)] text-dark mb-5 text-shadow-premium">Our Expertise</h2>
+                <p class="text-muted/70 max-w-2xl mx-auto text-lg tracking-wide">Exquisite floral creations tailored to every occasion and emotion</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10 lg:gap-12">
+                <!-- Service 1 -->
+                <div class="bg-white/80 backdrop-blur-sm p-10 lg:p-12 rounded-3xl shadow-soft hover:shadow-luxury hover-lift-premium transition-all duration-500 border-luxury">
+                    <div class="w-20 h-20 bg-secondary/80 text-primary rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-accent/10 group-hover:text-accent transition-all duration-300">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-2xl mb-5 text-dark">Funeral Tributes</h3>
+                    <p class="text-muted/80 leading-relaxed text-lg mb-6">
+                        Dignified, thoughtful and deeply personal floral tributes to honour your loved one. We create designs that reflect their personality, passions, career or cherished memories — crafted with the utmost care, respect and sensitivity during difficult times.
+                    </p>
+                    <ul class="space-y-2 text-sm text-dark/70">
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Custom shapes & themes</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Full consultation service</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Direct funeral delivery</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white/80 backdrop-blur-sm p-10 lg:p-12 rounded-3xl shadow-soft hover:shadow-luxury hover-lift-premium transition-all duration-500 border-luxury">
+                    <div class="w-20 h-20 bg-secondary/80 text-primary rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-accent/10 group-hover:text-accent transition-all duration-300">
+                        <i class="fa fa-gift"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-2xl mb-5 text-dark">Luxury Bouquets</h3>
+                    <p class="text-muted/80 leading-relaxed text-lg mb-6">
+                        Hand-tied luxury bouquets and arrangements for birthdays, anniversaries, weddings, celebrations or simply to say you care. Sourced from premium growers, every bloom is chosen for perfection, colour and longevity — finished with elegant wrapping and presentation.
+                    </p>
+                    <ul class="space-y-2 text-sm text-dark/70">
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Seasonal premium blooms</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Elegant gift presentation</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Long-lasting quality</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white/80 backdrop-blur-sm p-10 lg:p-12 rounded-3xl shadow-soft hover:shadow-luxury hover-lift-premium transition-all duration-500 border-luxury">
+                    <div class="w-20 h-20 bg-secondary/80 text-primary rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-accent/10 group-hover:text-accent transition-all duration-300">
+                        <i class="fa fa-paint-brush"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-2xl mb-5 text-dark">Bespoke Design</h3>
+                    <p class="text-muted/80 leading-relaxed text-lg mb-6">
+                        Do you have a unique vision? Something you have imagined but never seen? Julie is famous for creating designs others will not or cannot attempt. No request is too unusual, too complex or too ambitious — if you dream it, we will create it exactly as you envision.
+                    </p>
+                    <ul class="space-y-2 text-sm text-dark/70">
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> 100% custom creation</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Exact colour matching</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Unlimited possibilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - PERFECTLY SIZED, PREMIUM GRADE -->
+    <section id="gallery" class="py-28 px-6 md:px-16 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="font-display font-bold text-[clamp(2.2rem,4.5vw,3.5rem)] text-dark mb-5 text-shadow-premium">Our Portfolio</h2>
+                <p class="text-muted/70 max-w-2xl mx-auto text-lg tracking-wide">A curated selection of our finest work — every piece unique, every image perfectly sized and presented</p>
+            </div>
+
+            <!-- Infinite Scrolling Gallery - ALL IMAGES 320×400px, IDENTICAL SIZE, CLEAN -->
+            <div class="gallery-scroll scrollbar-hide">
+                <div class="gallery-track animate-scroll-gentle">
+                    <!-- First Set 1–13 -->
+                    <div class="flex gap-8 flex-none">
+                        <img src="image1.jpeg" alt="Luxury floral design" class="image-premium">
+                        <img src="image2.jpeg" alt="Premium bouquet" class="image-premium">
+                        <img src="image3.jpeg" alt="Funeral tribute" class="image-premium">
+                        <img src="image4.jpeg" alt="Bespoke floral art" class="image-premium">
+                        <img src="image5.jpeg" alt="Seasonal arrangement" class="image-premium">
+                        <img src="image6.jpeg" alt="Sympathy spray" class="image-premium">
+                        <img src="image7.jpeg" alt="Wedding centrepiece" class="image-premium">
+                        <img src="image8.jpeg" alt="Elegant hand-tied" class="image-premium">
+                        <img src="image9.jpeg" alt="Custom tribute" class="image-premium">
+                        <img src="image10.jpeg" alt="Gift bouquet" class="image-premium">
+                        <img src="image11.jpeg" alt="Pastel luxury design" class="image-premium">
+                        <img src="image12.jpeg" alt="Cushion tribute" class="image-premium">
+                        <img src="image13.jpeg" alt="Premium mixed flowers" class="image-premium">
+                    </div>
+                    <!-- Duplicate Set for Seamless Loop -->
+                    <div class="flex gap-8 flex-none">
+                        <img src="image1.jpeg" alt="Luxury floral design" class="image-premium">
+                        <img src="image2.jpeg" alt="Premium bouquet" class="image-premium">
+                        <img src="image3.jpeg" alt="Funeral tribute" class="image-premium">
+                        <img src="image4.jpeg" alt="Bespoke floral art" class="image-premium">
+                        <img src="image5.jpeg" alt="Seasonal arrangement" class="image-premium">
+                        <img src="image6.jpeg" alt="Sympathy spray" class="image-premium">
+                        <img src="image7.jpeg" alt="Wedding centrepiece" class="image-premium">
+                        <img src="image8.jpeg" alt="Elegant hand-tied" class="image-premium">
+                        <img src="image9.jpeg" alt="Custom tribute" class="image-premium">
+                        <img src="image10.jpeg" alt="Gift bouquet" class="image-premium">
+                        <img src="image11.jpeg" alt="Pastel luxury design" class="image-premium">
+                        <img src="image12.jpeg" alt="Cushion tribute" class="image-premium">
+                        <img src="image13.jpeg" alt="Premium mixed flowers" class="image-premium">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <p class="text-muted/60 text-sm">All photographs are of actual work created by Julie's Ins and Outs — no stock imagery used</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-28 px-6 md:px-16 bg-soft-gradient relative">
+        <div class="absolute top-0 left-0 opacity-[0.04] bg-[url('https://www.transparenttextures.com/patterns/floral-pattern.png')] w-full h-full -z-10"></div>
+
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="font-display font-bold text-[clamp(2.2rem,4.5vw,3.5rem)] text-dark mb-5 text-shadow-premium">Client Testimonials</h2>
+                <p class="text-muted/70 max-w-2xl mx-auto text-lg tracking-wide">Genuine feedback from our valued clients — all reviews verified and collected directly from Facebook</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Review 1 -->
+                <div class="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-soft hover:shadow-luxury hover-lift-premium transition-all duration-500 border-luxury">
+                    <div class="flex text-accent text-xl mb-6">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="text-muted/80 italic mb-8 leading-relaxed text-lg">
+                        "Julie created the most beautiful tribute for my dad’s funeral. I gave her a rough idea and she transformed it into something absolutely perfect. So many people commented on how thoughtful and stunning it was. Her care and kindness made a difficult time much easier — truly exceptional service."
+                    </p>
+                    <div class="font-display font-semibold text-dark text-xl">— Sarah M.</div>
+                    <div class="text-sm text-muted/60 mt-2">Verified Client • 5/5 Stars</div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-soft hover:shadow-luxury hover-lift-premium transition-all duration-500 border-luxury">
+                    <div class="flex text-accent text-xl mb-6">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="text-muted/80 italic mb-8 leading-relaxed text-lg">
+                        "I requested something quite unusual for my sister’s birthday — other florists said it couldn’t be done. Julie said ‘leave it with me’ and the result was breathtaking — exactly what I imagined, even more beautiful. She is incredibly talented, professional and a joy to work with."
+                    </p>
+                    <div class="font-display font-semibold text-dark text-xl">— Emma L.</div>
+                    <div class="text-sm text-muted/60 mt-2">Verified Client • 5/5 Stars</div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-soft hover:shadow-luxury hover-lift-premium transition-all duration-500 border-luxury">
+                    <div class="flex text-accent text-xl mb-6">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="text-muted/80 italic mb-8 leading-relaxed text-lg">
+                        "I have used Julie for over 10 years — for weddings, funerals and gifts. Her flowers are always fresh, fragrant and arranged with exquisite style. Delivery is always on time, and her advice is invaluable. There is simply no better florist in Birmingham."
+                    </p>
+                    <div class="font-display font-semibold text-dark text-xl">— Karen T.</div>
+                    <div class="text-sm text-muted/60 mt-2">Verified Client • 5/5 Stars</div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-soft hover:shadow-luxury hover-lift-premium transition-all duration-500 border-luxury">
+                    <div class="flex text-accent text-xl mb-6">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="text-muted/80 italic mb-8 leading-relaxed text-lg">
+                        "Julie designed a bespoke tribute based on my mum’s favourite flowers and colours. It was perfect — every detail considered, delivered with care and sensitivity. She listened carefully and understood exactly what we wanted. I cannot recommend her highly enough."
+                    </p>
+                    <div class="font-display font-semibold text-dark text-xl">— Mark R.</div>
+                    <div class="text-sm text-muted/60 mt-2">Verified Client • 5/5 Stars</div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-soft hover:shadow-luxury hover-lift-premium transition-all duration-500 border-luxury">
+                    <div class="flex text-accent text-xl mb-6">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="text-muted/80 italic mb-8 leading-relaxed text-lg">
+                        "The most beautiful anniversary bouquet we have ever received. The colours were rich and elegant, the arrangement full and luxurious. Julie’s attention to detail is unmatched. She is professional, friendly and truly an artist with flowers."
+                    </p>
+                    <div class="font-display font-semibold text-dark text-xl">— Claire B.</div>
+                    <div class="text-sm text-muted/60 mt-2">Verified Client • 5/5 Stars</div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-soft hover:shadow-luxury hover-lift-premium transition-all duration-500 border-luxury">
+                    <div class="flex text-accent text-xl mb-6">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="text-muted/80 italic mb-8 leading-relaxed text-lg">
+                        "I had a very complex, specific request for a funeral tribute. Julie didn’t hesitate — she created something extraordinary that captured every detail we asked for. Her skill, patience and kindness were incredible. She turned a difficult moment into something beautiful."
+                    </p>
+                    <div class="font-display font-semibold text-dark text-xl">— Paul J.</div>
+                    <div class="text-sm text-muted/60 mt-2">Verified Client • 5/5 Stars</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-28 px-6 md:px-16 bg-white relative overflow-hidden">
+        <div class="absolute -z-0 bottom-0 left-0 opacity-[0.04] bg-[url('https://www.transparenttextures.com/patterns/floral-pattern.png')] w-full h-full"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="font-display font-bold text-[clamp(2.2rem,4.5vw,3.5rem)] text-dark mb-6 text-shadow-premium">Get in Touch</h2>
+            <p class="text-muted/80 mb-8 max-w-xl mx-auto text-lg">
+                Whether you require a dignified tribute, a luxury bouquet or a completely unique creation — Julie is here to help. Every enquiry is treated with the care and attention it deserves.
+            </p>
+            <p class="text-muted/70 mb-16 max-w-lg mx-auto text-base">
+                Based in Birmingham, serving the West Midlands and surrounding areas. Consultations available by appointment.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-10 max-w-2xl mx-auto">
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/447732033578?text=Hi%20Julie%2C%20I%20would%20like%20to%20discuss%20some%20flowers%20for%20an%20occasion%20please." target="_blank" class="bg-green-700 hover:bg-green-800 text-white p-10 rounded-3xl shadow-luxury hover:shadow-strong hover-lift-premium transform transition-all duration-500 flex flex-col items-center justify-center gap-5 group">
+                    <i class="fa fa-whatsapp text-6xl group-hover:scale-110 transition-transform duration-300"></i>
+                    <span class="font-semibold text-xl tracking-wide">Message on WhatsApp</span>
+                    <span class="text-sm opacity-90">Direct & Fast Response</span>
+                </a>
+
+                <!-- Phone Button -->
+                <a href="tel:07732033578" class="bg-primary hover:bg-primary/90 text-white p-10 rounded-3xl shadow-luxury hover:shadow-strong hover-lift-premium transform transition-all duration-500 flex flex-col items-center justify-center gap-5 group">
+                    <i class="fa fa-phone text-6xl group-hover:scale-110 transition-transform duration-300"></i>
+                    <span class="font-semibold text-xl tracking-wide">Call Julie Direct</span>
+                    <span class="text-sm opacity-90">07732 033578</span>
+                </a>
+            </div>
+
+            <div class="mt-20 pt-10 border-t border-border/40 max-w-md mx-auto">
+                <p class="text-muted/60 text-sm leading-relaxed">
+                    Please note: All designs are made to order. For funeral tributes, please contact us as early as possible to ensure we can accommodate your requirements and deliver on time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-soft-gradient py-16 px-6 md:px-16 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/floral-pattern.png')] -z-0"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- Logo in Footer -->
+            <div class="flex justify-center mb-8">
+                <img src="Julieslogo.png" alt="Julie's Ins and Outs Logo" class="h-16 w-auto">
+            </div>
+
+            <p class="font-display font-bold text-2xl text-primary mb-3">Julie's Ins and Outs</p>
+            <p class="text-accent font-medium text-lg mb-6">Flowers for all occasions</p>
+            <p class="text-muted/60 mb-8 text-base max-w-xl mx-auto">Over 15 years creating exquisite floral designs for every moment and memory. Premium quality, personal service, uncompromising excellence.</p>
+
+            <div class="flex justify-center gap-8 mb-8">
+                <a href="#" class="text-primary/70 hover:text-accent transition-colors text-2xl" aria-label="Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="text-primary/70 hover:text-accent transition-colors text-2xl" aria-label="Instagram">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="divider-floral max-w-xs mx-auto mb-6"></div>
+
+            <p class="text-muted/50 text-sm">© 2026 Julie's Ins and Outs. All rights reserved. | No prices displayed — all quotes provided on request.</p>
+        </div>
+    </footer>
+
+    <!-- Premium JavaScript -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-medium', 'bg-cream/98');
+                nav.classList.remove('shadow-soft', 'bg-cream/95');
+            } else {
+                nav.classList.add('shadow-soft', 'bg-cream/95');
+                nav.classList.remove('shadow-medium', 'bg-cream/98');
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
