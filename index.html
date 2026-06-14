@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#66715A" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Julie's Ins & Outs Floral Design" />
+
+  <title>Julie's Ins & Outs | Luxury Florist Birmingham</title>
+  <meta name="description" content="Luxury florist in Birmingham creating bespoke bouquets, funeral flowers, wedding flowers and handcrafted floral arrangements by Julie's Ins & Outs." />
+  <meta name="keywords" content="florist Birmingham, funeral flowers Birmingham, wedding flowers Birmingham, bespoke bouquets, Julie's Ins and Outs florist" />
+
+  <meta property="og:title" content="Julie's Ins & Outs | Luxury Florist Birmingham" />
+  <meta property="og:description" content="Bespoke funeral flowers, wedding florals, bouquets and custom arrangements across Birmingham." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="Julieslogo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Florist",
+    "name":"Julie's Ins & Outs Floral Design",
+    "description":"Luxury florist in Birmingham creating bespoke bouquets, funeral flowers, wedding flowers and custom floral arrangements.",
+    "telephone":"+447732033578",
+    "priceRange":"££",
+    "image":"Julieslogo.png",
+    "address":{"@type":"PostalAddress","addressLocality":"Birmingham","addressRegion":"West Midlands","addressCountry":"GB"},
+    "areaServed":["Birmingham","West Midlands"],
+    "makesOffer":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Funeral flowers"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Wedding flowers"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bespoke bouquets"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom floral arrangements"}}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --sage:#66715A;
+      --forest:#3F4A38;
+      --moss:#7E876F;
+      --cream:#FAF8F3;
+      --ivory:#FFFDF8;
+      --blush:#F4E6E2;
+      --rose:#E8CFC8;
+      --gold:#B89B5E;
+      --ink:#282B25;
+      --muted:rgba(40,43,37,.66);
+      --line:rgba(102,113,90,.18);
+      --shadow:0 18px 50px rgba(63,74,56,.12);
+      --shadow-soft:0 10px 30px rgba(40,43,37,.08);
+      --radius:26px;
+      --max:1160px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;overflow-x:hidden}
+    body{font-family:Montserrat,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;overflow-x:hidden}
+    body.menu-open{overflow:hidden}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button,input,textarea,select{font:inherit}
+    .serif{font-family:"Cormorant Garamond",serif}
+    .container{width:min(91%,var(--max));margin-inline:auto}
+    .section{padding:74px 0}
+    .section.alt{background:var(--ivory)}
+    .section.blush{background:linear-gradient(180deg,var(--cream),var(--blush))}
+
+    .eyebrow{display:inline-flex;align-items:center;gap:.55rem;border:1px solid rgba(184,155,94,.24);background:rgba(255,255,255,.62);color:var(--gold);border-radius:999px;padding:.5rem .75rem;font-size:.68rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+    h1,h2,h3{color:var(--sage);line-height:.98;letter-spacing:-.035em}
+    h1{font-family:"Cormorant Garamond",serif;font-size:clamp(3.1rem,9vw,6.8rem);font-weight:600;max-width:780px}
+    h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2.35rem,5vw,4.4rem);font-weight:600;max-width:760px}
+    h3{font-family:"Cormorant Garamond",serif;font-size:1.75rem;font-weight:600}
+    p{color:var(--muted);font-size:1rem}
+    .lead{font-size:clamp(1rem,1.6vw,1.14rem);line-height:1.85;max-width:650px;color:rgba(40,43,37,.72)}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:999px;min-height:52px;padding:.95rem 1.25rem;font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;border:1px solid transparent;transition:transform .22s ease,box-shadow .22s ease,background .22s ease;color:inherit}
+    .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-soft)}
+    .btn-primary{background:var(--sage);color:white}
+    .btn-primary:hover{background:var(--forest)}
+    .btn-light{background:rgba(255,255,255,.75);border-color:rgba(102,113,90,.24);color:var(--sage)}
+
+    .nav-wrap{position:fixed;inset:0 0 auto;z-index:1000;padding:10px 10px 0;pointer-events:none}
+    .nav{pointer-events:auto;max-width:var(--max);margin:auto;background:rgba(255,253,248,.82);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.78);border-radius:22px;box-shadow:0 10px 30px rgba(40,43,37,.08)}
+    .nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0 16px}
+    .brand{display:flex;align-items:center;gap:.75rem;min-width:0}
+    .brand img{height:48px;width:auto}
+    .brand-text{line-height:1.05}
+    .brand-text strong{display:block;font-family:"Cormorant Garamond",serif;color:var(--sage);font-size:1.15rem;white-space:nowrap}
+    .brand-text span{display:block;color:var(--gold);font-size:.58rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;margin-top:.25rem;white-space:nowrap}
+    .nav-links{display:flex;list-style:none;gap:1.4rem;align-items:center;color:var(--forest);font-size:.82rem;font-weight:750}
+    .nav-links a:hover{color:var(--gold)}
+    .nav-actions{display:flex;align-items:center;gap:.6rem}
+    .menu-btn{display:none;width:42px;height:42px;border:1px solid var(--line);background:white;border-radius:14px;color:var(--forest);font-size:1.35rem;cursor:pointer}
+
+    .hero{min-height:100svh;padding:112px 0 44px;display:flex;align-items:center;position:relative;background:radial-gradient(circle at 16% 16%, rgba(244,230,226,.95), transparent 30%),radial-gradient(circle at 86% 14%, rgba(184,155,94,.18), transparent 24%),linear-gradient(135deg,#FAF8F3 0%,#FFFDF8 55%,#F4E6E2 100%);overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:.98fr 1.02fr;gap:48px;align-items:center;position:relative;z-index:1}
+    .hero-copy .eyebrow{margin-bottom:18px}
+    .hero-copy h1 span{color:var(--gold);font-style:italic}
+    .hero-copy .lead{margin:20px 0 24px}
+    .hero-actions{display:flex;gap:.75rem;flex-wrap:wrap}
+    .trust-row{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:24px}
+    .trust{background:rgba(255,255,255,.72);border:1px solid rgba(102,113,90,.16);border-radius:999px;padding:.55rem .75rem;color:rgba(40,43,37,.64);font-size:.74rem;font-weight:800}
+
+    .hero-gallery{position:relative;min-height:520px;width:100%}
+    .photo-stack{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;transform:rotate(-1.4deg)}
+    .flower-card{overflow:hidden;background:white;border:1px solid rgba(255,255,255,.9);box-shadow:var(--shadow);padding:8px}
+    .flower-card img{width:100%;height:100%;object-fit:cover}
+    .flower-card.main{grid-row:1/3;border-radius:34px;height:100%}
+    .flower-card.main img{border-radius:25px}
+    .flower-card.small{border-radius:28px;height:100%}
+    .flower-card.small img{border-radius:20px}
+    .hero-badge{position:absolute;right:14px;bottom:18px;width:min(245px,62%);background:rgba(255,253,248,.92);border:1px solid rgba(184,155,94,.22);box-shadow:var(--shadow);border-radius:22px;padding:1.1rem;z-index:2;backdrop-filter:blur(12px)}
+    .hero-badge strong{display:block;font-family:"Cormorant Garamond",serif;color:var(--sage);font-size:2rem;line-height:.95;font-weight:600}
+    .hero-badge span{display:block;margin-top:.35rem;font-size:.72rem;color:rgba(40,43,37,.58);font-weight:800;text-transform:uppercase;letter-spacing:.14em}
+
+    .service-strip{background:var(--forest);color:white;padding:13px 0}
+    .service-strip .container{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+    .strip-item{text-align:center;color:rgba(255,255,255,.78);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.09em}
+
+    .section-head{max-width:740px;margin:0 auto 34px;text-align:center}
+    .section-head .eyebrow{margin-bottom:14px}
+    .section-head p{margin-top:14px}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{background:rgba(255,255,255,.86);border:1px solid rgba(102,113,90,.16);border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:24px;transition:transform .25s ease,box-shadow .25s ease}
+    .card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .card .emoji{font-size:2rem;margin-bottom:14px}
+    .card p{margin-top:10px;font-size:.94rem;line-height:1.7}
+
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center}
+    .story-card{background:white;border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:34px;border:1px solid rgba(102,113,90,.14)}
+    .story-card .lead{margin-top:16px}
+    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .mini{background:white;border:1px solid rgba(102,113,90,.14);box-shadow:var(--shadow-soft);border-radius:22px;padding:22px}
+    .mini p{margin-top:8px;font-size:.94rem}
+
+    .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .gallery-grid img{width:100%;height:230px;object-fit:cover;border-radius:24px;box-shadow:var(--shadow-soft);background:white;padding:5px}
+    .gallery-grid img:nth-child(1),.gallery-grid img:nth-child(6){grid-row:span 2;height:472px}
+
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .quote{background:white;border:1px solid rgba(102,113,90,.14);border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:24px}
+    .stars{color:var(--gold);letter-spacing:.08em}.quote blockquote{margin-top:14px;color:rgba(40,43,37,.72);line-height:1.75}.quote strong{display:block;margin-top:16px;color:var(--sage)}
+
+    .contact{background:radial-gradient(circle at top left, rgba(184,155,94,.34), transparent 34%),linear-gradient(135deg,var(--sage),var(--forest));color:white}
+    .contact h2,.contact h3{color:white}.contact p{color:rgba(255,255,255,.78)}
+    .contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:18px;align-items:stretch}
+    .contact-panel{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.1);border-radius:var(--radius);padding:30px;backdrop-filter:blur(12px)}
+    .contact-panel .eyebrow{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.16);color:rgba(255,255,255,.78)}
+    .contact-panel ul{list-style:none;display:grid;gap:12px;margin-top:20px;color:rgba(255,255,255,.78);font-weight:650}
+    .contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+    .contact-actions .btn{background:white;color:var(--sage);border:0}
+    .contact-actions .btn.primary{background:var(--gold);color:white}
+    .contact-note{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:30px}
+
+    footer{padding:44px 0;text-align:center;background:var(--cream)}
+    footer img{height:86px;margin:0 auto 18px}footer p{font-size:.86rem}
+
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}.reveal.visible{opacity:1;transform:none}
+
+    @media(max-width:980px){
+      .nav-links,.nav-actions .btn{display:none}.menu-btn{display:grid;place-items:center}.nav-links.open{display:flex;position:absolute;top:78px;left:10px;right:10px;background:rgba(255,253,248,.98);backdrop-filter:blur(16px);border:1px solid rgba(102,113,90,.16);box-shadow:var(--shadow-soft);border-radius:20px;padding:14px;flex-direction:column;align-items:stretch;gap:0}.nav-links.open a{display:block;padding:14px;border-bottom:1px solid rgba(102,113,90,.12)}.nav-links.open li:last-child a{border-bottom:0}
+      .hero-grid,.split,.contact-grid{grid-template-columns:1fr}.hero-gallery{min-height:470px;max-width:610px;margin:auto}.cards{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:repeat(2,1fr)}.reviews{grid-template-columns:1fr}.service-strip .container{grid-template-columns:1fr 1fr}.contact-actions{grid-template-columns:1fr}
+    }
+
+    @media(max-width:640px){
+      .container{width:min(92%,var(--max))}.nav-wrap{padding:8px 8px 0}.nav{border-radius:18px}.nav-inner{height:62px;padding:0 12px}.brand img{height:42px}.brand-text strong{font-size:.98rem}.brand-text span{font-size:.5rem;letter-spacing:.18em}.menu-btn{width:38px;height:38px;border-radius:12px}
+      .section{padding:54px 0}.hero{min-height:auto;padding:92px 0 36px}.hero-grid{gap:24px}.hero-copy{text-align:left}.hero-copy .eyebrow{margin-bottom:14px}h1{font-size:clamp(2.95rem,14.4vw,4.1rem);line-height:.88}.hero-copy .lead{font-size:.94rem;line-height:1.72;margin:16px 0 18px}.hero-actions{display:grid;grid-template-columns:1fr;gap:10px}.btn{min-height:48px;padding:.82rem 1rem;font-size:.74rem}.trust-row{margin-top:16px;gap:7px}.trust{font-size:.66rem;padding:.44rem .55rem}
+      .hero-gallery{min-height:310px;width:100%;margin-top:2px}.photo-stack{grid-template-columns:1fr .82fr;gap:9px;transform:rotate(-1.7deg)}.flower-card{padding:5px}.flower-card.main{border-radius:24px}.flower-card.main img{border-radius:18px}.flower-card.small{border-radius:20px}.flower-card.small img{border-radius:14px}.hero-badge{right:6px;bottom:2px;width:190px;border-radius:18px;padding:.9rem}.hero-badge strong{font-size:1.55rem}.hero-badge span{font-size:.62rem;letter-spacing:.12em}
+      .service-strip{padding:11px 0}.strip-item{text-align:left;font-size:.62rem;letter-spacing:.06em}.section-head{text-align:left;margin-bottom:22px}.section-head h2{font-size:2.35rem}.section-head p{font-size:.94rem;line-height:1.7}.cards,.mini-grid,.gallery-grid{grid-template-columns:1fr}.card,.story-card,.mini,.quote,.contact-panel,.contact-note{padding:20px;border-radius:20px}.card h3,.mini h3{font-size:1.55rem}.card p,.mini p{font-size:.9rem}.gallery-grid{gap:10px}.gallery-grid img,.gallery-grid img:nth-child(1),.gallery-grid img:nth-child(6){height:260px;grid-row:auto;border-radius:20px}.contact h2{font-size:2.55rem}.contact-panel ul{font-size:.9rem}footer img{height:74px}
+    }
+
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}}
+  </style>
+</head>
+<body>
+  <header class="nav-wrap" aria-label="Primary navigation">
+    <div class="nav">
+      <div class="nav-inner">
+        <a href="#home" class="brand" aria-label="Julie's Ins & Outs homepage">
+          <img src="Julieslogo.png" alt="Julie's Ins & Outs logo" />
+          <span class="brand-text"><strong>Julie's Ins & Outs</strong><span>Floral Design</span></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="https://wa.me/447732033578?text=Hi%20Julie%2C%20I%20would%20like%20to%20discuss%20some%20flowers" target="_blank" rel="noopener">WhatsApp Julie</a>
+          <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Birmingham Florist</span>
+          <h1>Flowers made to feel <span>personal.</span></h1>
+          <p class="lead">Beautiful funeral flowers, wedding florals, bespoke bouquets and custom arrangements, handcrafted by Julie with care, creativity and over 15 years of experience.</p>
+          <div class="hero-actions">
+            <a href="https://wa.me/447732033578?text=Hi%20Julie%2C%20I%20would%20like%20to%20discuss%20some%20flowers" target="_blank" rel="noopener" class="btn btn-primary">Discuss Flowers</a>
+            <a href="tel:07732033578" class="btn btn-light">Call Julie</a>
+          </div>
+          <div class="trust-row" aria-label="Trust points">
+            <span class="trust">15+ years</span>
+            <span class="trust">Bespoke designs</span>
+            <span class="trust">Birmingham based</span>
+          </div>
+        </div>
+
+        <div class="hero-gallery reveal" aria-label="Featured floral designs">
+          <div class="photo-stack">
+            <div class="flower-card main"><img src="image6.jpeg" alt="Luxury floral bouquet by Julie's Ins & Outs" /></div>
+            <div class="flower-card small"><img src="image1.jpeg" alt="Bespoke floral arrangement by Julie" /></div>
+            <div class="flower-card small"><img src="image8.jpeg" alt="Handcrafted flowers by Julie" /></div>
+          </div>
+          <div class="hero-badge"><strong>Thoughtful detail</strong><span>Every stem chosen with care</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="service-strip" aria-label="Popular services">
+      <div class="container">
+        <span class="strip-item">Funeral Flowers</span>
+        <span class="strip-item">Bespoke Bouquets</span>
+        <span class="strip-item">Wedding Flowers</span>
+        <span class="strip-item">Custom Designs</span>
+      </div>
+    </div>
+
+    <section class="section alt" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What Julie Creates</span>
+          <h2>Floral design for life’s most meaningful moments.</h2>
+          <p>Elegant, personal and handcrafted flowers for occasions that deserve care and attention.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal"><div class="emoji">🤍</div><h3>Funeral Flowers</h3><p>Heartfelt tributes created with dignity, empathy and personal detail.</p></article>
+          <article class="card reveal"><div class="emoji">🌹</div><h3>Bespoke Bouquets</h3><p>Beautiful bouquets designed around colours, occasion, style and message.</p></article>
+          <article class="card reveal"><div class="emoji">💍</div><h3>Wedding Flowers</h3><p>Bridal bouquets, buttonholes, centrepieces and soft floral styling.</p></article>
+          <article class="card reveal"><div class="emoji">✨</div><h3>Custom Designs</h3><p>Unique floral ideas brought to life with creativity and confidence.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blush" id="experience">
+      <div class="container split">
+        <div class="story-card reveal">
+          <span class="eyebrow">The Julie Difference</span>
+          <h2>More personal than a standard florist.</h2>
+          <p class="lead">Julie has built her reputation through word of mouth, repeat customers and thoughtful service across Birmingham. You deal directly with Julie, so every detail is understood properly.</p>
+        </div>
+        <div class="mini-grid">
+          <div class="mini reveal"><h3>Bespoke by default</h3><p>Every arrangement can be tailored to the person, colours, event and meaning behind the flowers.</p></div>
+          <div class="mini reveal"><h3>Trusted locally</h3><p>A friendly Birmingham florist known for care, reliability and beautiful finishing touches.</p></div>
+          <div class="mini reveal" style="grid-column:1/-1"><h3>Created with empathy</h3><p>From celebration flowers to sensitive funeral tributes, each arrangement is handled with patience, respect and attention to detail.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Recent Work</span>
+          <h2>A cleaner glimpse into Julie’s floral world.</h2>
+          <p>A simple mobile-friendly gallery that lets the flowers do the talking.</p>
+        </div>
+        <div class="gallery-grid reveal">
+          <img src="image1.jpeg" alt="Floral design by Julie" loading="lazy" />
+          <img src="image2.jpeg" alt="Floral design by Julie" loading="lazy" />
+          <img src="image3.jpeg" alt="Floral design by Julie" loading="lazy" />
+          <img src="image4.jpeg" alt="Floral design by Julie" loading="lazy" />
+          <img src="image5.jpeg" alt="Floral design by Julie" loading="lazy" />
+          <img src="image6.jpeg" alt="Floral design by Julie" loading="lazy" />
+          <img src="image7.jpeg" alt="Floral design by Julie" loading="lazy" />
+          <img src="image8.jpeg" alt="Floral design by Julie" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section blush" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Customer Feedback</span>
+          <h2>Kind words from customers.</h2>
+        </div>
+        <div class="reviews">
+          <figure class="quote reveal"><div class="stars">★★★★★</div><blockquote>“Julie created the most beautiful funeral tribute for our Dad. Every detail was perfect and the flowers were absolutely stunning.”</blockquote><strong>Sarah M.</strong></figure>
+          <figure class="quote reveal"><div class="stars">★★★★★</div><blockquote>“I gave Julie a rough idea and somehow she created something even better than I imagined.”</blockquote><strong>Claire T.</strong></figure>
+          <figure class="quote reveal"><div class="stars">★★★★★</div><blockquote>“Absolutely beautiful wedding flowers. We had compliments all day.”</blockquote><strong>Rachel D.</strong></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-panel reveal">
+          <span class="eyebrow">Contact Julie</span>
+          <h2>Let’s create something beautiful.</h2>
+          <p>Send Julie your occasion, date, colours and any ideas or photos. She’ll help guide you towards the right flowers and design.</p>
+          <ul>
+            <li>📍 Birmingham, West Midlands</li>
+            <li>📞 <a href="tel:07732033578">07732 033578</a></li>
+          </ul>
+          <div class="contact-actions">
+            <a href="https://wa.me/447732033578?text=Hi%20Julie%2C%20I%20would%20like%20to%20discuss%20some%20flowers" target="_blank" rel="noopener" class="btn primary">WhatsApp Julie</a>
+            <a href="tel:07732033578" class="btn">Call Julie</a>
+          </div>
+        </div>
+        <div class="contact-note reveal">
+          <h3>Best things to send</h3>
+          <p style="margin-top:12px">The occasion, preferred colours, date needed, delivery or collection details, budget range and any inspiration photos. WhatsApp is usually the easiest way to start.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container reveal">
+      <img src="Julieslogo.png" alt="Julie's Ins & Outs logo" />
+      <h3>Julie's Ins & Outs</h3>
+      <p>Luxury Floral Design • Birmingham</p>
+      <p style="margin-top:12px;color:rgba(40,43,37,.45)">© 2026 Julie's Ins & Outs Floral Design. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    function closeMenu(){
+      navLinks.classList.remove('open');
+      document.body.classList.remove('menu-open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.textContent = '☰';
+    }
+
+    menuBtn.addEventListener('click', () => {
+      const open = !navLinks.classList.contains('open');
+      navLinks.classList.toggle('open', open);
+      document.body.classList.toggle('menu-open', open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.textContent = open ? '×' : '☰';
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', event => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if(!target) return;
+        event.preventDefault();
+        closeMenu();
+        window.scrollTo({top:target.offsetTop - 86, behavior:'smooth'});
+      });
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -50px 0px'});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
